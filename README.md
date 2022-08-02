@@ -15,3 +15,21 @@ The classifier performed significantly better for female subjects (balanced accu
 
 **Discussion:**
 The identified sex differences cannot be attributed to an imbalanced training dataset, and therefore points to the importance of examining and reporting classifier performance across population subgroups to increase transparency and algorithmic fairness.
+
+
+
+## Code structure
+To reproduce our results, follow the Jupyter Notebooks in order:
+- `0_identify_converters_cn_to_mci_or_ad` identifies subjects which entered the ADNI study as healthy, but at a later visit received a diagnosis of MCI or AD
+- `1_create_dataset_splits_stratified` balances the study population for sex and age and then creates the train-val-test splits using stratified sampling
+- `2_train_models_multiGPU` contains the code for training the model described in the paper on the balanced splits
+- `3_raw_predictions` saves the raw predictions (i.e. the AD class score) for all trained models on their respective test sets
+- `4_calculate_LRP_heatmaps` generates the LRP heatmaps for all trained models on all subjects of their respective test sets
+- `5_average_heatmaps` calculates the average heatmaps for male/female AD/HC subjects across all trained models
+- `6_plot_heatmap_comparisons` creates the heatmap comparison plots from the paper (Figures 4 and 5)
+
+
+
+## Attributions
+
+The code written for this study is based on and uses code created by Moritz Böhle, Fabian Eitel, Martin Weygandt, and Kerstin Ritter for their paper "Layer-wise relevance propagation for explaining deep neural network decisions in MRI-based Alzheimer’s disease classification" (https://doi.org/10.3389/fnagi.2019.00194, https://github.com/moboehle/Pytorch-LRP). If you use code from this repository, please cite both their paper and ours.
