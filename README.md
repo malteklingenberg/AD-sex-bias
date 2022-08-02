@@ -1,6 +1,6 @@
 # Higher performance for females than males in MRI-based Alzheimer's disease detection
 
-**Malte Klingenberg, Didem Stark, Fabian Eitel, and Kerstin Ritter**
+**Malte Klingenberg, Didem Stark, Fabian Eitel, Mohamad Habes, and Kerstin Ritter**
 
 ### Abstract
 
