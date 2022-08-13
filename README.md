@@ -30,6 +30,11 @@ To reproduce our results, follow the Jupyter Notebooks in order:
 
 
 
+## Image IDs
+To ensure reproducibility, we provide a full list of the ADNI Image UIDs of our dataset splits in the file `imageuids.csv`. The file contains a column `SPLIT` ranging from 0 to 9, and a column `DATASET`, which has the values `train`, `val`, and `test` for each of the ten splits. The subject ID, group, sex, age, and visit code are also given for ease of use.
+
+
+
 ## Attributions
 
 The code written for this study is based on and uses code created by Moritz Böhle, Fabian Eitel, Martin Weygandt, and Kerstin Ritter for their paper "Layer-wise relevance propagation for explaining deep neural network decisions in MRI-based Alzheimer’s disease classification" (https://doi.org/10.3389/fnagi.2019.00194, https://github.com/moboehle/Pytorch-LRP). If you use code from this repository, please cite both their paper and ours.
