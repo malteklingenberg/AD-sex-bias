@@ -2,7 +2,7 @@
 
 **Malte Klingenberg, Didem Stark, Fabian Eitel, Mohamad Habes, and Kerstin Ritter**
 
-**Preprint:** https://www.researchsquare.com/article/rs-1964110
+**Full article:** https://alzres.biomedcentral.com/articles/10.1186/s13195-023-01225-6
 
 ### Abstract
 
